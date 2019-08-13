@@ -1,25 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react'
+import logo from './images/logo.svg'
+import hero from './images/hero-mobile.jpg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Fragment>
+      <header>
+        <img src={logo} alt="logo" />
+        <img src={hero} alt="woman" />
       </header>
-    </div>
+
+      <main>
+        <h1><span>We're</span> coming soon</h1>
+        <p>Hello fellow shoppers! We're currently building our new fashion store.
+  Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+        <form>
+          <label>
+            Email Address
+            <input type="text" name="email" />
+            <input type="submit" value=">" />
+          </label>
+        </form>
+      </main>
+      
+  
+  
+  <footer>
+    <p className="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
+      Coded by <a href="#">AliLynne</a>.
+    </p>
+  </footer>
+    </Fragment>
   );
 }
 
